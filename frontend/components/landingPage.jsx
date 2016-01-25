@@ -10,7 +10,7 @@ var LandingPage = React.createClass({
         {/iPad|iPhone|iPod/.test(navigator.platform) ? "" : "" }
         <div className="container container-custom text-center" id="landing-text">
           <h1>TAKE A VACATION</h1>
-          <h4>Go on a trip, see what happens!</h4>
+          <h4>Go on a trip in San Francisco, see what happens!</h4>
         </div>
         <LandingSearchBar history={this.props.history}/>
       </div>
