@@ -46,11 +46,7 @@ var Map = React.createClass({
       pos = new google.maps.LatLng(room.lat, room.lng);
       _markers[roomId] = new google.maps.Marker({
         position: pos,
-        map: _map,
-        icon: {
-          url: img,
-          // size: new google.maps.Size(60, 60),
-          scaledSize: new google.maps.Size(55, 35)
+        map: _map
         }
         // icon: img
       });
