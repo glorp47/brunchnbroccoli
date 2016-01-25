@@ -48,10 +48,6 @@ var RoomHeader = React.createClass({
             <div className="row">
               <div className="col-xs-4">
                 <div className="row center">
-                  <img
-                     src={room_icon_url}
-                     height="40px"
-                     width="40px"/>
                 </div>
                 <div className="row center">
                   <h4>{room.type_string}</h4>
@@ -60,10 +56,6 @@ var RoomHeader = React.createClass({
 
               <div className="col-xs-4">
                 <div className="row center">
-                  <img
-                    src="/assets/icons/guests_100"
-                    height="40px"
-                    width="40px"/>
                 </div>
                 <div className="row center">
                   <h4>{room.max_guest_num + " Guest" + (room.max_guest_num > 1 ? "s" : "")}</h4>
@@ -72,10 +64,6 @@ var RoomHeader = React.createClass({
 
               <div className="col-xs-4">
                 <div className="row center">
-                  <img
-                    src="/assets/icons/bed_100"
-                    height="40px"
-                    width="40px"/>
                 </div>
                 <div className="row center">
                   <h4>{room.bed_num + " Bed" + (room.bed_num > 1 ? "s" : "")}</h4>
