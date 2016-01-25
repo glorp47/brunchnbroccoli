@@ -17,6 +17,13 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
+  "engines": {
+    "node": "4.1.1",
+    "npm": "2.1.x"
+  },
+  "scripts": {
+    "postinstall": "./node_modules/.bin/webpack"
+  },
   "bugs": {
     "url": "https://github.com/glorp47/brunchnbroccoli/issues"
   },
