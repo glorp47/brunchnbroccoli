@@ -62,9 +62,6 @@ var RoomHeader = React.createClass({
               </div>
 
             </div>
-          </div>
-        </div>
-      </div>
     );
   }
 });
