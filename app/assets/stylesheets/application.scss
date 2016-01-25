@@ -1,0 +1,815 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+ *= require_tree .
+ *= require jquery-ui
+ *= require_self
+ */
+@import "bootstrap-sprockets";
+@import 'bootstrap';
+
+div {
+  display: block;
+}
+
+html, body, #root, #app {
+  height: 100%;
+  // font: sans-serif;
+  font-family: 'Lato', sans-serif;
+  font-size: 15px;
+}
+
+body {
+  background-color: #f5f5f5;
+  color: #565a5c;
+  line-height: 1.43;
+}
+
+// @media screen and (max-width: 680px)
+// {
+//     video { display : none; }
+// }
+
+.span-btn-stylefix {
+  z-index: 1000;
+}
+
+.btn-stylefix {
+  background-color: rgba(0, 0, 0, 0.1);
+  border: 1px solid #ccc;
+
+}
+.input-stylefix {
+  z-index:900;
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
+.no-margin {
+  margin: 0;
+}
+
+.no-padding-left {
+  padding-left: 0;
+}
+.no-padding-right {
+  padding-right: 0;
+}
+
+.bg-light-green {
+  // width: 100%;
+  // margin: 0;
+  // padding: 0;
+  // background-color: #CCFFCC;
+  background-color: #F2FBEF;
+}
+
+.center {
+  text-align: center;
+}
+
+// bootstrap md
+@media only screen and (min-width : 992px) {
+  .md-no-left-padding {
+    padding-left: 0;
+  }
+  .md-no-right-padding {
+    padding-right: 0;
+  }
+}
+
+
+.loading-screen {
+  position: relative;
+  margin: 50px;
+  float: left;
+}
+
+
+
+ .navbar-custom {
+   min-height: 30px;
+   background-color: rgba(0, 0, 0, 0.1);
+   border-bottom: none;
+   margin-bottom: 0px;
+ }
+ .navbar-brand {
+   padding-top: 5px;
+ }
+ .nav li {
+   cursor: pointer;
+ }
+
+.input-group {
+  margin: 0 auto;
+     float: none;
+     width: 100%;
+     border-width: 0.5px;
+     border-style: solid;
+}
+
+// for navbar account options dropdown
+ .dropdown:hover .dropdown-menu {
+   display: block;
+}
+
+.dropdown-menu {
+  opacity: 0.8;
+}
+
+// for login_signup modals
+  @media screen and (min-width: 480px) {
+      .user-modal {
+          width: 450px;
+      }
+  }
+
+ .jumbotron-landing {
+   margin: 0 auto;
+   top: 0;
+   left: 0;
+   right: 0;
+   height: 100%;
+   width: 100%;
+   position: absolute;
+   padding: 0;
+   background-image: url("/assets/background/94102_9.jpeg");
+   background-size: 100%;
+   background-size: cover;
+   background-repeat: no-repeat;
+ }
+
+ .jumbotron-landing > .full-bg {
+   position: absolute;
+   top: 0;
+   right: 0;
+   bottom: 0;
+   left: 0;
+   overflow: hidden;
+  //  z-index: -100;
+ }
+
+
+ .jumbotron-landing > .container-custom {
+  //  margin-top: 60px;
+  position: absolute;
+  width: 100%;
+  margin-top: 15%;
+ }
+ .jumbotron-landing > .container-custom > h1 {
+   display: block;
+   font-size: 60px;
+   font-weight: 700;
+  //  color: #ff3300;
+   color: #fff;
+ }
+
+ .jumbotron-landing > .container-custom > h4 {
+   font-size: 18px;
+  //  font-weight: bold;
+   font-weight: 400;
+  //  color: #00ff00;
+   color: #fff;
+ }
+
+ .below-nav {
+   top: 50px;
+   position: relative;
+ }
+ .fixed-full-screen {
+   padding: 0;
+   left: 0;
+   right: 0;
+   bottom: 0;
+   position: absolute;
+ }
+
+ .room {
+   position: fixed;
+  //  height: 100%;
+   height: calc(100% - 50px);
+   overflow-y: scroll;
+
+ }
+
+ .full-width {
+   padding-left: 0;
+   padding-right: 0;
+   width: 100%;
+ }
+
+
+ #landing-search-bar {
+   position: absolute;
+   bottom: 0%;
+   padding: 3%;
+   background-color: rgba(0, 0, 0, 0.1);
+   background-size: 100%;
+
+ }
+
+ #sidx {
+   top: 50px;
+   padding: 0;
+   right: auto;
+   bottom: 0;
+   position: absolute;
+ }
+
+ #search-map-canvas {
+   //  position: fixed;
+   margin-bottom: 0px;
+   width: 100%;
+   height: 100%;
+ }
+
+ .search-map {
+   padding: 0;
+   position: fixed;
+   right: auto;
+   left: 0px;
+   bottom: 0px;
+   top: 50px;
+ }
+
+ .search-filters {
+   padding: 5px;
+   margin-left: 20px;
+   margin-right: 20px;
+ }
+
+ .row-filter {
+   padding-top: 15px;
+   padding-bottom: 15px;
+   border-bottom: 1px solid #E6E6E6;
+ }
+
+ .price-range-container {
+   padding-top: 18px;
+ }
+
+ .filter-type-selection {
+  //  height: 40px;
+  //  border: 1px solid grey;
+ }
+ .button-checkbox > button {
+   width: 100%;
+ }
+
+
+ .search-result {
+   top: 50px;
+   right: 0;
+   bottom: 0;
+   position: fixed;
+   overflow-y: scroll;
+ }
+
+
+ .row-space-3 {
+   margin-top: 3%;
+ }
+
+ .row-space-5 {
+   margin-top: 5%;
+ }
+
+ .search-list-listings {
+   padding-bottom: 10%;
+ }
+
+
+
+ .list-item-image {
+   padding-bottom: 67%;
+  //  height: 67%;
+   position: relative;
+   overflow: hidden;
+   background-color: #E7ECEE;
+ }
+
+ .image-container {
+   position: absolute;
+   top: 0;
+   bottom: 0;
+   left: 0;
+   right: 0;
+ }
+
+ .list-item-image > .image-container {
+   z-index: 800;
+ }
+
+ .img-container > img {
+   z-index: 810;
+ }
+
+ .image-loading-container {
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 100%;
+   z-index: 820;
+   background-color: gray;
+   text-align: center;
+   opacity: 0.7;
+ }
+
+ .image-container > .image-loading-container {
+   height: 100%;
+ }
+ .room-img-container > .image-loading-container {
+   height: 80%;
+ }
+
+ .image-loading-container > i {
+   position: absolute;
+   top: calc(50% - 21px);
+   left: calc(50% - 21px);
+   color: #FF8000;
+ }
+
+
+
+.control-container {
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   z-index: 900;
+   opacity: 0;
+ }
+
+ .control-container:hover {
+   opacity: 1;
+ }
+
+ .control-container > div {
+   position: absolute;
+   width: 50px;
+   height: 100%;
+   z-index: 920;
+   cursor: pointer;
+ }
+
+ .control-left-container {
+   left: 0;
+ }
+ .control-right-container {
+   right: 0;
+ }
+
+ .control-container i {
+   position: absolute;
+   top: 45%;
+  //  font-size: 3em;
+   color: #F4FA58;
+ }
+
+ .control-container div:hover > i {
+   color: #2EFEF7;
+ }
+
+
+ .control-container .fa-chevron-left {
+   left: 0;
+ }
+ .control-container .fa-chevron-right {
+   right: 0;
+ }
+
+ .control-container > .control-redirect-container {
+   position: absolute;
+   width: 100%;
+   height: 100%;
+   z-index: 910;
+ }
+
+
+
+ .list-image {
+  //  margin: auto;
+  //  max-height: 100%;
+   border-bottom: none;
+   border-radius: 12px;
+ }
+
+ .list-item-body {
+   padding: 10px;
+   position: relative;
+   border-radius: 0 0 12px 12px;
+   background: #E7ECEE;
+ }
+
+ .body-container {
+
+ }
+ h3.listing-name {
+   max-width: calc(100% - 70px);
+   font-size: 16px;
+   margin: 6.25px 0 0;
+   font-weight: normal;
+   overflow: hidden;
+   text-overflow: ellipsis;
+   white-space: nowrap;
+ }
+
+ .list-host-pic-container {
+  //  position: absolute;
+  //  top: -30px;
+  //  right: 15px;
+  //  height: 60%;
+  //  overflow: hidden;
+  //  border-radius:50%;
+  margin-top: -70px;
+  float: right;
+  display: inline-block;
+  position: relative;
+  height: 70px;
+  width: 70px;
+  z-index: 900;
+ }
+
+ .body-container {
+   margin-bottom: 0;
+   margin-top: 0;
+ }
+
+ .room-img-container {
+   width: 100%;
+   height: 80%;
+   overflow: hidden;
+ }
+
+ .room-img {
+   width: 100%;
+ }
+
+ .room-img-container > .control-container {
+   height: 80%;
+ }
+
+ .room-header-row {
+   width: 100%;
+   min-height: 20%;
+   background-color: white;
+ }
+
+ .room-header {
+  //  width: 100%;
+  //  height: 20%;
+  //  min-height: 100px;
+   margin-top: 8px;
+   z-index: 500;
+ }
+
+ .room-host-pic-container {
+   display: inline-block;
+   position: relative;
+   height: 110px;
+   width: 110px;
+   margin-top: 10px;
+ }
+
+ .rsvp-tab {
+   position: absolute;
+   padding-left: 15px;
+   padding-right: 15px;
+   right: 80px;
+   top: calc(80% - 45px);
+   background-color: rgba(203, 42, 248, 0.08);
+ }
+
+ .tsvp-tab > div {
+   left: 0;
+   position:absolute;
+   padding-left: 0;
+   padding-right: 0;
+   height: 45px;
+   width: 100%;
+   border-left: 1px solid #dce0e0;
+ }
+ .rsvp-ppn {
+  //  top: 0;
+   height: 45px;
+  //  width: 100%;
+   background-color: rgba(5, 51, 168, 0.75);
+ }
+ .rsvp-ppn>h3 {
+   margin-top: 10px;
+   padding: 6px;
+   color: rgb(42, 231, 248);
+ }
+ .rsvp-button {
+   padding-top: 20px;
+   padding-bottom: 20px;
+ }
+ .rsvp-map {
+   padding-top: 20px;
+   padding-bottom: 20px;
+ }
+
+ .room-body {
+   margin-top: 50px;
+   padding-left: 50px;
+ }
+
+ .room-body > .row:not(:first-of-type){
+   border-top: 1px solid #dce0e0;
+   padding-top: 15px;
+   padding-bottom: 15px;
+ }
+
+
+ .room-amenity-icon {
+   width: 25px;
+   height: 25px;
+ }
+
+ // for testing
+
+#landing-search-bar {
+  -webkit-transition: bottom 2s, -webkit-transform 2s;
+  transition: bottom 2s, transform 2s;
+}
+
+.pac-container {
+  -webkit-transition: all 2s, -webkit-transform 2s;
+  transition: all 2s, transform 2s;
+}
+
+
+// #landing-search-bar:hover {
+//   bottom: 10%;
+// }
+
+// trips vertical tab
+// https://github.com/dbtek/bootstrap-vertical-tabs
+.tabs-left, .tabs-right {
+  border-bottom: none;
+  padding-top: 2px;
+}
+.tabs-left {
+  border-right: 1px solid #ddd;
+}
+.tabs-right {
+  border-left: 1px solid #ddd;
+}
+.tabs-left>li, .tabs-right>li {
+  float: none;
+  margin-bottom: 2px;
+}
+.tabs-left>li {
+  margin-right: -1px;
+}
+.tabs-right>li {
+  margin-left: -1px;
+}
+.tabs-left>li.active>a,
+.tabs-left>li.active>a:hover,
+.tabs-left>li.active>a:focus {
+  border-bottom-color: #ddd;
+  border-right-color: transparent;
+}
+
+.tabs-right>li.active>a,
+.tabs-right>li.active>a:hover,
+.tabs-right>li.active>a:focus {
+  border-bottom: 1px solid #ddd;
+  border-left-color: transparent;
+}
+.tabs-left>li>a {
+  border-radius: 4px 0 0 4px;
+  margin-right: 0;
+  display:block;
+}
+.tabs-right>li>a {
+  border-radius: 0 4px 4px 0;
+  margin-right: 0;
+}
+.sideways {
+  margin-top:50px;
+  border: none;
+  position: relative;
+}
+.sideways>li {
+  height: 30px;
+  width: 120px;
+  margin-bottom: 100px;
+}
+.sideways>li>a {
+  border-bottom: 1px solid #ddd;
+  border-right-color: transparent;
+  text-align: center;
+  border-radius: 4px 4px 0px 0px;
+}
+.sideways>li.active>a,
+.sideways>li.active>a:hover,
+.sideways>li.active>a:focus {
+  border-bottom-color: transparent;
+  border-right-color: #ddd;
+  border-left-color: #ddd;
+}
+.sideways.tabs-left {
+  left: -50px;
+}
+.sideways.tabs-right {
+  right: -50px;
+}
+.sideways.tabs-right>li {
+  -webkit-transform: rotate(90deg);
+  -moz-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  -o-transform: rotate(90deg);
+  transform: rotate(90deg);
+}
+.sideways.tabs-left>li {
+  -webkit-transform: rotate(-90deg);
+  -moz-transform: rotate(-90deg);
+  -ms-transform: rotate(-90deg);
+  -o-transform: rotate(-90deg);
+  transform: rotate(-90deg);
+}
+
+
+
+// trip-list-panel
+
+.trip-list-panel {
+  padding-top: 8px;
+  // left: -50px;
+  // position: relative;
+  height: 100%;
+  overflow-y: scroll;
+}
+
+.trip-detail-panel {
+  position: fixed;
+  right: 5px;
+  height: calc(100% - 55px);
+  overflow-y: scroll;
+  width: 62.5%;
+}
+
+.trip-detail-panel h2 {
+  color: #ff3399;
+}
+
+.trip-detail-container > .row:not(:first-of-type) {
+  border-top: 1px solid #dce0e0;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.trip-item-image {
+  position: relative;
+}
+
+
+.room-title {
+  margin-top: 10px;
+  margin-bottom: 5px;
+}
+.room-city {
+  margin-top: 5px;
+  margin-bottom: 10px;
+}
+
+
+
+
+
+// http://www.css-spinners.com/css/spinner/three-quarters.css
+@-moz-keyframes three-quarters-loader {
+  0% {
+    -moz-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -moz-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+@-webkit-keyframes three-quarters-loader {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+@keyframes three-quarters-loader {
+  0% {
+    -moz-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -moz-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+/* :not(:required) hides this rule from IE9 and below */
+.three-quarters-loader:not(:required) {
+  -moz-animation: three-quarters-loader 1250ms infinite linear;
+  -webkit-animation: three-quarters-loader 1250ms infinite linear;
+  animation: three-quarters-loader 1250ms infinite linear;
+  border: 2px solid #38e;
+  border-right-color: transparent;
+  border-radius: 12px;
+  box-sizing: border-box;
+  display: inline-block;
+  position: relative;
+  overflow: hidden;
+  text-indent: -9999px;
+  width: 16px;
+  height: 16px;
+}
+
+
+
+
+// fadein
+
+.animated {
+  -webkit-animation-duration: 10.5s;
+  animation-duration: 10.5s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+
+.animated-alternate {
+  -webkit-animation-direction: alternate;
+  animation-direction: alternate;
+}
+
+.animated-infinite {
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+}
+
+@-webkit-keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 0.8;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 0.8;
+  }
+}
+
+.fadeIn {
+  -webkit-animation-name: fadeIn;
+  animation-name: fadeIn;
+}
+
+
+
+
+
+
+// gmap markers
+.labels {
+  // color: red;
+  // background-color: white;
+  // font-family: "Lucida Grande", "Arial", sans-serif;
+  // font-size: 10px;
+  // font-weight: bold;
+  // text-align: center;
+  // width: 40px;
+  // border: 2px solid black;
+  // white-space: nowrap;
+  color: white;
+  background-color: red;
+  // font-family:"Lucida Grande", "Arial", sans-serif;
+  font-size: 10px;
+  text-align: center;
+  width: 30px;
+  white-space: nowrap;
+}

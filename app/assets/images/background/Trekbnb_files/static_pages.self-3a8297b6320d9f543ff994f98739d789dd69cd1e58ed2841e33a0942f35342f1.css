@@ -1,0 +1,11 @@
+/* line 7, /Users/Colin/Documents/workspace/trekit/trekbnb/app/assets/stylesheets/static_pages.scss */
+.header-full {
+  margin: 0 auto;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 600px;
+  width: 100%;
+  background-image: url("https://a2.muscache.com/airbnb/static/landing_pages/pretzel/stills/croatia-887a17b9994536f0d95bfd3f43ed664c.jpg");
+}

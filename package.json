@@ -1,0 +1,38 @@
+{
+  "name": "brunchnbroccoli",
+  "version": "1.0.0",
+  "description": "brunchnbroccoli",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs",
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/glorp47/brunchnbroccoli.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/glorp47/brunchnbroccoli/issues"
+  },
+  "homepage": "https://github.com/glorp47/brunchnbroccoli#readme",
+  "dependencies": {
+    "babel-core": "^6.4.5",
+    "babel-loader": "^6.2.1",
+    "babel-preset-react": "^6.3.13",
+    "bootstrap": "^3.3.6",
+    "flux": "^2.1.1",
+    "history": "^1.13.1",
+    "react": "^0.14.6",
+    "react-addons-linked-state-mixin": "^0.14.6",
+    "react-bootstrap": "^0.28.2",
+    "react-dom": "^0.14.6",
+    "react-router": "^1.0.2",
+    "webpack": "^1.12.9"
+  }
+}

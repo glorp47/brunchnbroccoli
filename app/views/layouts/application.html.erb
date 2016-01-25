@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>BrunchNBroccoli</title>
+  <%= stylesheet_link_tag    'application', media: 'all'%>
+  <%= javascript_include_tag 'application'%>
+  <%= favicon_link_tag 'favicon.ico' %>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+  <link href='https://fonts.googleapis.com/css?family=Oxygen:700,400,300' rel='stylesheet' type='text/css'>
+  <img src="/assets/markers/pink_2.png" id="pinkmarker" style="display:none;"></img>
+  <script type="text/javascript">
+    window.gMapsStatus = false;
+    window.gMapsReady = function() {
+      window.gMapsStatus = true;
+    };
+  </script>
+
+  <script
+    type="text/javascript"
+    src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.10.6/moment.min.js">
+  </script>
+  <script
+    type="text/javascript"
+    src="//cdn.jsdelivr.net/bootstrap.daterangepicker/2/daterangepicker.js">
+  </script>
+  <link
+    rel="stylesheet"
+    type="text/css"
+    href="//cdn.jsdelivr.net/bootstrap.daterangepicker/2/daterangepicker.css">
+  </link>
+  <script
+      id="gmapslib"
+      async="true"
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCtYLxe36ZACT2bRLmcefUJ_EG2Nzm7n04&libraries=places,geometry&callback=gMapsReady">
+  </script>
+  <script type="text/javascript">
+    window.CLOUDINARY_OPTIONS = {
+      update_preset: "<%=  %>",
+      cloud_name: "<%=  %>"
+    };
+  </script>
+  <%= csrf_meta_tags %>
+</head>
+<body id="html-body">
+
+<%= yield %>
+
+</body>
+</html>

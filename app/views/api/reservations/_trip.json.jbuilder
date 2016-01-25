@@ -1,0 +1,12 @@
+json.id               trip.id
+json.room_id          trip.room_id
+json.room_city        trip.room.city
+json.room_title       trip.room.title
+json.room_pic         trip.room_primary_pic.pic_url
+json.room_price       trip.room.price
+json.host_fname       trip.host_profile.fname
+json.start_date       trip.start_date
+json.end_date         trip.end_date
+json.guest_num        trip.guest_num
+json.status_id        trip.status
+json.status           Reservation::STATUS[trip.status]
