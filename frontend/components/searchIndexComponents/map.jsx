@@ -31,7 +31,7 @@ var Map = React.createClass({
     });
   },
 
-  _addMarkers: function(addRoomIds, newRooms) {
+  _addMarkers: function(addRoomIds, newRoomds) {
     var _markers = this.markers;
     var _map = this.map;
     // var image = "/assets/markers/pink.png";
@@ -41,12 +41,16 @@ var Map = React.createClass({
     var markerBg = this.markerBg;
 
     addRoomIds.forEach(function(roomId) {
-      room = newRooms[roomId];
+      room = newRoomds[roomId];
       img = MarkerImg(room.price, markerBg);
       pos = new google.maps.LatLng(room.lat, room.lng);
       _markers[roomId] = new google.maps.Marker({
         position: pos,
-        map: _map
+        map: _map,
+        icon: {
+          url: img,
+          // size: new google.maps.Size(60, 60),
+          scaledSize: new google.maps.Size(55, 35)
         }
         // icon: img
       });
