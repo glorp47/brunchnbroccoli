@@ -47,25 +47,16 @@ var RoomHeader = React.createClass({
 
             <div className="row">
               <div className="col-xs-4">
-                <div className="row center">
-                </div>
-                <div className="row center">
                   <h4>{room.type_string}</h4>
                 </div>
               </div>
 
               <div className="col-xs-4">
-                <div className="row center">
-                </div>
-                <div className="row center">
                   <h4>{room.max_guest_num + " Guest" + (room.max_guest_num > 1 ? "s" : "")}</h4>
                 </div>
               </div>
 
               <div className="col-xs-4">
-                <div className="row center">
-                </div>
-                <div className="row center">
                   <h4>{room.bed_num + " Bed" + (room.bed_num > 1 ? "s" : "")}</h4>
                 </div>
               </div>
