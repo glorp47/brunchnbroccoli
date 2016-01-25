@@ -9,11 +9,11 @@ var RoomHeader = React.createClass({
           + room.host_pic_url;
     var room_icon_url;
     if(room.type_id === 1) {
-      room_icon_url = "/assets/images/icons/entire_home_100.png"
+      room_icon_url = "http://res.cloudinary.com/dz6em5lpq/image/upload/v1453746931/entire_home_100_jbkgdy.png"
     } else if (room.type_id === 2) {
-      room_icon_url = "/assets/images/icons/private_room_100.png"
+      room_icon_url = "http://res.cloudinary.com/dz6em5lpq/image/upload/v1453746931/private_room_100_shrduf.png"
     } else {
-      room_icon_url = "/assets/images/icons/shared_room_100.png"
+      room_icon_url = "http://res.cloudinary.com/dz6em5lpq/image/upload/v1453746931/shared_room_100_gwnvos.png"
     }
     // debugger;
     return (
@@ -61,7 +61,7 @@ var RoomHeader = React.createClass({
               <div className="col-xs-4">
                 <div className="row center">
                   <img
-                    src="/assets/images/icons/guests_100"
+                    src="http://res.cloudinary.com/dz6em5lpq/image/upload/v1453746931/guests_100_bu4fxm.png"
                     height="40px"
                     width="40px"/>
                 </div>
@@ -73,7 +73,7 @@ var RoomHeader = React.createClass({
               <div className="col-xs-4">
                 <div className="row center">
                   <img
-                    src="/assets/images/icons/bed_100"
+                    src="http://res.cloudinary.com/dz6em5lpq/image/upload/v1453746931/bed_100_gkndwd.png"
                     height="40px"
                     width="40px"/>
                 </div>
