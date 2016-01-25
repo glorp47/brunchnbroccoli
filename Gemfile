@@ -30,7 +30,7 @@ gem 'bootstrap-sass'
 
 gem 'figaro'
 
-gem 'jquery-ui-rails', '~> 4.2.1'
+gem 'jquery-ui-rails'
 
 
 # Use ActiveModel has_secure_password
