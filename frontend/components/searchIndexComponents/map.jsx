@@ -31,7 +31,7 @@ var Map = React.createClass({
     });
   },
 
-  _addMarkers: function(addRoomIds, newRoomds) {
+  _addMarkers: function(addRoomIds, newRooms) {
     var _markers = this.markers;
     var _map = this.map;
     // var image = "/assets/markers/pink.png";
