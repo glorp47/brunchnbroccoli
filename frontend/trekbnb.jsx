@@ -13,7 +13,7 @@ var NavBar = require('./components/navBar.jsx');
 var SearchIndex = require('./components/searchIndex.jsx');
 var RoomIndex = require('./components/roomIndex.jsx');
 var UserIndex = require('./components/userIndex.jsx');
-var TripIndex = require('./components/TripIndex.jsx');
+var TripIndex = require('./components/tripIndex.jsx');
 var TripDetail = require('./components/tripComponents/tripDetail.jsx');
 
 
