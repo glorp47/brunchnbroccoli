@@ -43,8 +43,6 @@ var Map = React.createClass({
     addRoomIds.forEach(function(roomId) {
       room = newRoomds[roomId];
       img = MarkerImg(room.price, markerBg);
-      img.setAttribute('crossOrigin', 'anonymous');
-      img.src = url;
       pos = new google.maps.LatLng(room.lat, room.lng);
       _markers[roomId] = new google.maps.Marker({
         position: pos,
