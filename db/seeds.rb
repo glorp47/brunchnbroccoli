@@ -57,7 +57,7 @@ Room.create([
     host_id: "2",
     title: "Miniscule Dorm Room",
     type_id: "1",
-    price: "70",
+    price: "90",
     city: "San Francisco",
     lat: "37.759532",
     lng: "-122.428713",
@@ -121,6 +121,71 @@ Room.create([
     max_guest_num: "2",
     bed_num: "1",
     description: "Ed Lee will knock on your door and personally give you his GrubHub account."
+  },
+  {
+    host_id: "2",
+    title: "Formerly Owned By Willie Brown",
+    type_id: "2",
+    price: "300",
+    city: "San Francisco",
+    lat: "37.7448",
+    lng: "-122.420559",
+    primary_pic_id: "1",
+    max_guest_num: "1",
+    bed_num: "1",
+    description: "Still has a faint smell of graft."
+  },
+  {
+    host_id: "5",
+    title: "Ex-Super Bowl Party Site",
+    type_id: "2",
+    price: "200",
+    city: "San Francisco",
+    lat: "37.75848",
+    lng: "-122.486559",
+    primary_pic_id: "1",
+    max_guest_num: "2",
+    bed_num: "1",
+    description: "Comes with free leftover nachos."
+  },
+  {
+    host_id: "4",
+    title: "Colin Kaepernick's Ex-residence",
+    type_id: "2",
+    price: "325",
+    city: "San Francisco",
+    lat: "37.74435",
+    lng: "-122.4353",
+    primary_pic_id: "1",
+    max_guest_num: "2",
+    bed_num: "1",
+    description: "Was alright for a few years then rapidly degressed. Still worth a lot."
+  },
+  {
+    host_id: "2",
+    title: "Homeless Guy's Tent",
+    type_id: "2",
+    price: "70",
+    city: "San Francisco",
+    lat: "37.726935",
+    lng: "-122.44429",
+    primary_pic_id: "1",
+    max_guest_num: "1",
+    bed_num: "1",
+    description: "Surprisingly comfortable if you can stomach the smell."
+  },
+  {
+    host_id: "5",
+    title: "Shrimp Boy's Hideout",
+    type_id: "2",
+    price: "270",
+    city: "San Francisco",
+    lat: "37.718235",
+    lng: "-122.458313",
+    primary_pic_id: "1",
+    max_guest_num: "1",
+    bed_num: "1",
+    description: "Many Triads have passed through this location but recently has been turned over to the public."
   }
   ])
     #51557
@@ -182,6 +247,58 @@ Room.create([
       pic_url: "/v1453710676/stu2_etoq55.jpg"
     }
     ])
+    RoomPic.create!([
+      {
+        room_id: "6",
+        pic_url: "/v1454627073/tiny-kids-room-design_kybnjj.jpg"
+      },
+      {
+        room_id: "6",
+        pic_url: "/v1454626422/cozy-small-kids-room_pufdhb.jpg"
+      }
+      ])
+      RoomPic.create!([
+  {
+    room_id: "7",
+    pic_url: "/v1454643452/tribute-hotels-big-room-5.jpg.1360x678_default_rulxjs.jpg"
+  },
+  {
+    room_id: "7",
+    pic_url: "/v1454643703/big-room-available-rent-spacious-cozy-house-3d7d72d04793b0a2465ce89d847277a6_jpwlu6.jpg"
+  }
+  ])
+  RoomPic.create!([
+{
+room_id: "8",
+pic_url: "/v1454645812/Nice-Bed-Room-1920x1200_rksjkg.jpg"
+},
+{
+room_id: "8",
+pic_url: "/v1454646544/nice-living-rooms-photo-MYZo_oz4f21.jpg"
+}
+])
+RoomPic.create!([
+{
+room_id: "9",
+pic_url: "/v1454648666/tent_city_10_large_bf0dxq.jpg"
+},
+{
+room_id: "9",
+pic_url: "/v1454648720/seattle_homeless_tent_020615_b4mrpu.jpg"
+}
+])
+RoomPic.create!([
+{
+room_id: "10",
+pic_url: "/v1454667747/Chinese-style-arch-of-dining-room_xqu7py.jpg"
+},
+{
+room_id: "10",
+pic_url: "/v1454667788/Chinese-traditional-living-room-design-with-piano_fxndc5.jpg"
+}
+])
+
+
 
 
 Reservation.create!([
