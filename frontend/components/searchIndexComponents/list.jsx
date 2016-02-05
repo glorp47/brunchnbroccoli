@@ -16,12 +16,14 @@ var List = React.createClass({
            history={history}/>);
     });
     var redirectPrompt = (
+      <div className="loading">
       <h4>
         This demo only contains sample data for
         <a href="#/search/94102-CA-USA?f82ss9">
           {" San Francisco"}
         </a>
       </h4>
+      </div>
     );
     return (
       <div className="container-fluid search-list-frame">
