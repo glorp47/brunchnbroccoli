@@ -100,9 +100,6 @@ QueryStore.__onDispatch = function(payload) {
       QueryStore.__emitChange();
       break;
 
-      // phase B datepicker
-    // case QueryConstants.UNAVAILABILITY_RECEIVED:
-
   }
 };
 

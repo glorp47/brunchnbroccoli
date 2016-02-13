@@ -7,9 +7,6 @@ var RoomStore = new Store(AppDispatcher);
 var _currentRooms = {};
 
 var receiveRooms = function(rooms) {
-  // use this if _currentRooms is an array
-  // _currentRooms = rooms;
-  // use this if _currentRooms is an Object
   _currentRooms = {};
   rooms.forEach(function(room) {
     _currentRooms[room.id] = room;
@@ -20,9 +17,6 @@ var patchDetail = function(room) {
   _currentRooms[room.id] = room;
 };
 
-// var removeRooms = function() {
-//   _currentRooms = {};
-// };
 
 RoomStore.all = function() {
   return Object.assign({}, _currentRooms);

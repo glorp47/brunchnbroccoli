@@ -59,31 +59,11 @@ var _resetDates = function() {
 
 
 FilterStore.params = function() {
-  // // for initial testing only
-  // if (typeof _currentParams.bounds === 'undefined') {
-  //   _currentParams.bounds = {
-  //     northEast: {
-  //       lat: 37.818731361235045,
-  //       lng: -122.39405876159668
-  //     },
-  //     southWest: {
-  //       lat: 37.71437771589192,
-  //       lng: -122.46838813781739
-  //     }
-  //   }
-  // }
-  // // for initial testing only
-  // debugger;
 
   return Object.assign({}, _currentParams);
 };
 
 FilterStore.currentDates = function() {
-  // if (typeof _currentParams.dates === 'undefined') {
-  //   return {checkin: "", checkout: ""};
-  // } else {
-  //   return _currentParams.dates;
-  // }
   return _currentParams.dates || {checkin: null, checkout: null};
 };
 
@@ -106,9 +86,6 @@ FilterStore.currentGuests = function() {
 };
 
 FilterStore.currentRoomTypes = function() {
-  // return Object.keys(_currentParams.roomTypes).filter(function(roomType) {
-  //   return _currentParams.roomTypes[roomType];
-  // });
   return Object.assign({}, _currentParams.roomTypes)
 };
 

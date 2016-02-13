@@ -19,10 +19,6 @@ JSLoaderStore.__onDispatch = function (payload) {
       console.log("gmaps is ready");
       JSLoaderStore.__emitChange();
       break;
-    // case RoomConstants.REMOVECURRENTUSER:
-    //   removeRooms();
-    //   RoomStore.__emitChange();
-    //   break;
   }
 };
 
